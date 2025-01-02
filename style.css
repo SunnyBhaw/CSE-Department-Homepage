@@ -1,0 +1,118 @@
+@font-face {
+    font-family: 'PTSherifB';
+    src: url('Fonts/PTSerifB.ttf');
+}
+@font-face {
+    font-family: 'NotoSans';
+    src: url('Fonts/NotoSans.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    backdrop-filter: blur(1.2px);
+}
+.container section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.logo a img{
+    width: 140px;
+    height: 140px;
+    cursor: default;
+}
+.content{
+    font-family: notoSans;
+    font-size: 28px;
+}
+.content span{
+    display: flex;
+    justify-content: center;
+}
+.buttons nav{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.buttons nav a{
+    color: #FFFFFF;
+    font-family: 'PTSherifB';
+    font-size: 20px;
+    font-weight: bold;
+    background: #103FBC;
+    padding: 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#binary-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+@media only screen and (max-width: 1024px) {
+    .logo a img{
+        width: 130px;
+        height: 130px;
+    }
+    .content{
+        font-size: 21px;
+    }
+    .buttons nav a{
+        font-size: 16px;
+        padding: 12px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .logo a img{
+        width: 115px;
+        height: 115px;
+    }
+    .content{
+        font-size: 11px;
+    }
+    .buttons nav a{
+        font-size: 12px;
+        padding: 12px;
+    }
+}
+@media only screen and (max-width: 425px) {
+    .logo a img{
+        width: 110px;
+        height: 110px;
+    }
+    .content{
+        font-size: 10px;
+    }
+    .buttons nav a{
+        font-size: 10px;
+        padding: 12px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .logo a img{
+        width: 105px;
+        height: 105px;
+    }
+    .content{
+        font-size: 8px;
+    }
+    .buttons nav a{
+        font-size: 8px;
+        padding: 12px;
+    }
+}
